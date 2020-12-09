@@ -133,7 +133,7 @@ dependencies {
     }
 
     // Include the updated common with the android fixes
-    implementation 'com.nukkitx.network:common:1.16.24'
+    implementation 'com.nukkitx.network:common:1.16.23'
 
     // Implement the cleaned fastutil manually to prevent the error on release builds
     implementation files("${buildDir}/jarjar/fastutil-cleaned.jar") { builtBy 'jarjar-repackage_fastutil-cleaned.jar' }
