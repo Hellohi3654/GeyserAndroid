@@ -69,6 +69,11 @@ repositories {
     maven {
         url = uri('https://geyserandroid.jfrog.io/artifactory/geyserandroid-snapshots/')
     }
+    
+    
+    maven {
+        url = uri('https://repo.opencollab.dev/maven-releases/')
+    }
 
     maven {
         url = uri('https://repo.opencollab.dev/maven-snapshots/')
