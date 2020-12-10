@@ -153,6 +153,10 @@ dependencies {
 
     // Core Geyser
     implementation ('org.geysermc:connector:1.2.1-SNAPSHOT') {
+    credentials {
+                    username = project.findProperty("gpr.user") ?: System.getenv("USERNAME")
+                    password = project.findProperty("gpr.key") ?: System.getenv("TOKEN")
+                }
         exclude group: 'com.nukkitx.fastutil', module:'fastutil-common'
     }
 
