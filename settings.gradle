@@ -1,2 +1,14 @@
 include ':app'
 rootProject.name = "GeyserAndroid"
+pluginRepositories {
+
+    maven 
+    { 
+        url = uri('https://maven.pkg.github.com/hellohi3654/Geyser')
+        credentials {
+                    username = project.findProperty("gpr.user") ?: System.getenv("USERNAME")
+                    password = project.findProperty("gpr.key") ?: System.getenv("TOKEN")
+                }
+    }
+    gradlePluginPortal()
+}
