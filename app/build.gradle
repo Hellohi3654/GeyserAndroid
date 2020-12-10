@@ -67,7 +67,7 @@ repositories {
     mavenLocal()
     
     maven {
-        url = uri('https://geyserandroid.jfrog.io/artifactory/geyserandroid-snapshots/')
+        url = uri('https://maven.pkg.github.com/hellohi3654/Geyser')
     }
     
     
