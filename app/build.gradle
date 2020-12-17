@@ -113,8 +113,8 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'com.google.android.material:material:1.2.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
-    implementation 'androidx.navigation:navigation-fragment:2.3.1'
-    implementation 'androidx.navigation:navigation-ui:2.3.1'
+    implementation 'androidx.navigation:navigation-fragment:2.3.2'
+    implementation 'androidx.navigation:navigation-ui:2.3.2'
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
     implementation 'androidx.preference:preference:1.1.1'
     testImplementation 'junit:junit:4.12'
@@ -129,8 +129,9 @@ dependencies {
     implementation "com.fasterxml.jackson.core:jackson-databind:2.9.8"
 
     // Remove epoll, kqueue and fastutil from the protocol
-    implementation ("com.github.CloudburstMC.Protocol:common:87d862d69d") {
+    implementation ("com.github.CloudburstMC.Protocol:bedrock-v422:87d862d69d") {
         exclude group: 'com.nukkitx.fastutil', module:'fastutil-common'
+        exclude group: 'com.nukkitx.network', module:'raknet'
         exclude group: 'com.nukkitx.network', module:'common'
         exclude group: 'io.netty', module:'netty-transport-native-epoll'
         exclude group: 'io.netty', module:'netty-transport-native-kqueue'
@@ -138,6 +139,7 @@ dependencies {
 
     // Include the updated common with the android fixes
     implementation 'com.nukkitx.network:common:1.6.20'
+    implementation 'com.nukkitx.network:raknet:1.6.20'
 
     // Implement the cleaned fastutil manually to prevent the error on release builds
     implementation files("${buildDir}/jarjar/fastutil-cleaned.jar") { builtBy 'jarjar-repackage_fastutil-cleaned.jar' }
