@@ -71,8 +71,8 @@ public class ProxyFragment extends Fragment {
         // Set the initial text for all the UI elements
         txtLogs.setText(ProxyLogger.getLog());
         
-        txtAddress.setText(sharedPreferences.getString("proxy_address", "hellohi3654.wither.host"));
-        txtPort.setText(sharedPreferences.getString("proxy_port", "19179"));
+        txtAddress.setText(sharedPreferences.getString("proxy_address", "play.voltiac.xyz"));
+        txtPort.setText(sharedPreferences.getString("proxy_port", "19148"));
 
         // Check if the server is already running
         if (ProxyServer.getInstance() != null && !ProxyServer.getInstance().isShuttingDown()) {
