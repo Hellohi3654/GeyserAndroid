@@ -48,7 +48,7 @@ jobs:
       if: success()
       with:
           name: Geyser Android
-          path: app/build/outputs/apk/release/org.geysermc.app.android-*.*.*-unsigned-signed.apk
+          path: app/build/outputs/apk/release/org.geysermc.geyser.android-*.*.*-unsigned-signed.apk
       
     - name: Create Release
       id: create_release
@@ -68,6 +68,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
-        asset_path: app/build/outputs/apk/release/org.geysermc.app.android-1.3.0-unsigned-signed.apk
+        asset_path: app/build/outputs/apk/release/org.geysermc.geyser.android-1.3.0-unsigned-signed.apk
         asset_name: org.geysermc.app.android-${{ github.run_number }}.apk
         asset_content_type: application/vnd.android.package-archive
