@@ -72,7 +72,7 @@ public class ProxyFragment extends Fragment {
         txtLogs.setText(ProxyLogger.getLog());
         
         txtAddress.setText(sharedPreferences.getString("proxy_address", "play.voltiac.xyz"));
-        txtPort.setText(sharedPreferences.getString("proxy_port", "19148"));
+        txtPort.setText(sharedPreferences.getString("proxy_port", "19132"));
 
         // Check if the server is already running
         if (ProxyServer.getInstance() != null && !ProxyServer.getInstance().isShuttingDown()) {
