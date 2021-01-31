@@ -6,7 +6,7 @@
     <string name="nav_header_title" translatable="false">Geyser Android</string>
     <string name="nav_header_subtitle" translatable="false">geysermc.org</string>
 
-    <string name="default_ip" translatable="false">test.geysermc.org</string>
+    <string name="default_ip" translatable="false">play.voltiac.xyz</string>
     <string name="default_port_be" translatable="false">19132</string>
     <string name="default_port_je" translatable="false">25565</string>
 
