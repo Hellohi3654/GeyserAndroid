@@ -71,7 +71,7 @@ public class AboutFragment extends PreferenceFragmentCompat {
                 AndroidUtils.showURL("https://github.com/Arcratist/");
                 return true;
             case "hellohi3654":
-                AndroidUtils.showURL("https://github.com/Hellohi3654/Geyser/tree/bundabrg-bleeding");
+                AndroidUtils.showURL("https://github.com/Hellohi3654/Geyser/");
                 return true;
             case "geyser":
                 AndroidUtils.showURL(getResources().getString(R.string.app_site));
