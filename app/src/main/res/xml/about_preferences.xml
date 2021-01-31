@@ -41,6 +41,11 @@
             app:summary="Helping debug and support older Android versions" />
 
         <Preference
+            app:key="hellohi3654"
+            app:title="Hellohi3654"
+            app:summary="Doing absolutely nothing" />
+        
+        <Preference
             app:key="geyser"
             app:title="GeyserMC Team"
             app:summary="Development of the App" />
