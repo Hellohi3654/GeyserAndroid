@@ -88,9 +88,8 @@ public class ConfigEditorSimpleActivity extends AppCompatActivity {
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
         
-        txtAddress.setText(sharedPreferences.getString("proxy_address", "play.voltiac.xyz"));
-        txtPort.setText(sharedPreferences.getString("proxy_port", "25565"));
-        
+        txtAddress = findViewById(R.id.txtAddress);
+        txtPort = findViewById(R.id.txtPort);
         dpdAuthType = findViewById(R.id.dpdAuthType);
         Button btnUserAuths = findViewById(R.id.btnUserAuths);
         Button btnAdvanced = findViewById(R.id.btnAdvanced);
