@@ -130,15 +130,6 @@ dependencies {
 
     implementation "com.fasterxml.jackson.core:jackson-databind:2.9.8"
 
-    // Remove epoll, kqueue and fastutil from the protocol
-    implementation ("com.github.CloudburstMC.Protocol:bedrock-v422:a94d2dd") {
-        exclude group: 'com.nukkitx.fastutil', module:'fastutil-common'
-        exclude group: 'com.nukkitx.network', module:'raknet'
-        exclude group: 'com.nukkitx.network', module:'common'
-        exclude group: 'io.netty', module:'netty-transport-native-epoll'
-        exclude group: 'io.netty', module:'netty-transport-native-kqueue'
-    }
-
     // Implement the cleaned fastutil manually to prevent the error on release builds
     implementation files("${buildDir}/jarjar/fastutil-cleaned.jar") { builtBy 'jarjar-repackage_fastutil-cleaned.jar' }
 
