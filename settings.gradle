@@ -1,2 +1,17 @@
+pluginManagement {
+  resolutionStrategy {
+      eachPlugin {
+          if (requested.id.namespace == 'org.geysermc:connector') {
+              useModule('org.geysermc:connector:1.2.0-SNAPSHOT')
+          }
+      }
+  }
+  repositories {
+      maven {
+        url = uri('https://maven.pkg.github.com/hellohi3654/Geyser')
+      }
+      gradlePluginPortal()
+  }
+}
 include ':app'
 rootProject.name = "GeyserAndroid"

@@ -54,13 +54,13 @@ public class AboutFragment extends PreferenceFragmentCompat {
 
             // Links
             case "github":
-                AndroidUtils.showURL("https://github.com/GeyserMC/GeyserAndroid");
+                AndroidUtils.showURL("https://github.com/hellohi3654/GeyserAndroid");
                 return true;
             case "trello":
                 AndroidUtils.showURL("https://trello.com/b/pPJpl9dZ/geyser-android");
                 return true;
             case "ci":
-                AndroidUtils.showURL("https://ci.opencollab.dev/job/GeyserMC/job/GeyserAndroid/");
+                AndroidUtils.showURL("https://github.com/Hellohi3654/GeyserAndroid/actions");
                 return true;
 
             // Credits
@@ -69,6 +69,9 @@ public class AboutFragment extends PreferenceFragmentCompat {
                 return true;
             case "arcratist":
                 AndroidUtils.showURL("https://github.com/Arcratist/");
+                return true;
+			case "hellohi3654":
+                AndroidUtils.showURL("https://github.com/Hellohi3654/");
                 return true;
             case "geyser":
                 AndroidUtils.showURL(getResources().getString(R.string.app_site));
