@@ -58,7 +58,7 @@ jobs:
       with:
         tag_name: v${{ github.run_number }}
         release_name: Release v${{ github.run_number }}
-        body: "Click Assests to download the APK. Then open the APK to in
+        body: "Click Assests to download the APK. Then open the APK to install"
         draft: false
         prerelease: false
 
