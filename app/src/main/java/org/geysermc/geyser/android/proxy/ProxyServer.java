@@ -33,10 +33,10 @@ import com.nukkitx.protocol.bedrock.BedrockServer;
 import com.nukkitx.protocol.bedrock.BedrockServerEventHandler;
 import com.nukkitx.protocol.bedrock.BedrockServerSession;
 import com.nukkitx.protocol.bedrock.v431.Bedrock_v431;
+import com.nukkitx.protocol.bedrock.v440.Bedrock_v440;
 
 import org.geysermc.geyser.android.R;
 import org.geysermc.geyser.android.utils.EventListeners;
-import org.geysermc.connector.GeyserConnector;
 
 import java.net.InetSocketAddress;
 import java.util.ArrayList;
@@ -52,7 +52,7 @@ import lombok.Getter;
 
 public class ProxyServer {
 
-    public static final BedrockPacketCodec CODEC = Bedrock_v431.V431_CODEC;
+    public static final BedrockPacketCodec CODEC = Bedrock_v440.V440_CODEC;
 
     private BedrockServer bdServer;
     private BedrockPong bdPong;
@@ -94,12 +94,6 @@ public class ProxyServer {
         instance = this;
 
         proxyLogger = new ProxyLogger();
-
-        if (GeyserConnector.getInstance() != null && !GeyserConnector.getInstance().isShuttingDown()) {
-            proxyLogger.warning(ctx.getResources().getString(R.string.proxy_geyser_running_warn));
-            onDisable();
-            return;
-        }
 
         this.generalThreadPool = Executors.newScheduledThreadPool(32);
 

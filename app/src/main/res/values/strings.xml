@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name" translatable="false">Geyser Android</string>
     <string name="app_site" translatable="false">https://voltiac.xyz</string>
-    <string name="app_discord" translatable="false">http://discord.voltiac.xyz</string>
+    <string name="app_discord" translatable="false">https://voltiac.xyz/discord</string>
 
     <string name="nav_header_title" translatable="false">Geyser Android</string>
     <string name="nav_header_subtitle" translatable="false">voltiac.xyz</string>

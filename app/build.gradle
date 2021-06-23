@@ -126,7 +126,7 @@ dependencies {
     implementation "com.fasterxml.jackson.core:jackson-databind:2.10.2"
 
     // Remove epoll, kqueue and fastutil from the protocol
-    implementation ("com.github.CloudburstMC:Protocol:8725397") {
+    implementation ("com.github.CloudburstMC:Protocol:6985f66") {
         exclude group: 'com.nukkitx.fastutil', module:'fastutil-common'
         exclude group: 'com.nukkitx.network', module:'raknet'
         exclude group: 'com.nukkitx.network', module:'common'
@@ -152,17 +152,6 @@ dependencies {
 //        classDelete "it.unimi.dsi.fastutil.bytes.ByteIterator"
 //        classDelete "it.unimi.dsi.fastutil.doubles.DoubleIterator"
 //        classDelete "it.unimi.dsi.fastutil.floats.FloatIterator"
-    }
-
-    // Core Geyser
-    implementation ('org.geysermc:connector:1.2.1-SNAPSHOT') {
-        exclude group: 'com.nukkitx.fastutil', module:'fastutil-common'
-        exclude group: 'com.github.CloudburstMC.Network', module:'common'
-        exclude group: 'com.github.CloudburstMC.Network', module:'raknet'
-        exclude group: 'io.netty', module:'netty-transport-native-epoll'
-        exclude group: 'io.netty', module:'netty-transport-native-kqueue'
-        exclude group: 'com.github.CloudburstMC.Protocol'
-        exclude group: 'com.nukkitx.protocol'
     }
 
     // Load a remake of nnio to support earlier Android versions
