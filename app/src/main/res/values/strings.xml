@@ -1,12 +1,12 @@
 <resources>
     <string name="app_name" translatable="false">Geyser Android</string>
-    <string name="app_site" translatable="false">https://voltiac.xyz</string>
-    <string name="app_discord" translatable="false">https://voltiac.xyz/discord</string>
+    <string name="app_site" translatable="false">https://infinite.sbs</string>
+    <string name="app_discord" translatable="false">https://infinite.sbs/discord</string>
 
     <string name="nav_header_title" translatable="false">Geyser Android</string>
-    <string name="nav_header_subtitle" translatable="false">voltiac.xyz</string>
+    <string name="nav_header_subtitle" translatable="false">infinite.sbs</string>
 
-    <string name="default_ip" translatable="false">play.voltiac.xyz</string>
+    <string name="default_ip" translatable="false">play.infinite.sbs</string>
     <string name="default_port_be" translatable="false">19132</string>
     <string name="default_port_je" translatable="false">25565</string>
 
