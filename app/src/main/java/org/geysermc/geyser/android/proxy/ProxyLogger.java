@@ -41,20 +41,20 @@ public class ProxyLogger {
     public void warning(String message) {
         log += "WARN - " + message + "\n";
         if (listener != null) listener.onLogLine("WARN - " + message);
-        // System.out.println("WARN - " + message);
+        System.out.println("WARN - " + message);
     }
 
     public void info(String message) {
         log += "INFO - " + message + "\n";
         if (listener != null) listener.onLogLine("INFO - " + message);
-        // System.out.println("INFO - " + message);
+        System.out.println("INFO - " + message);
     }
 
     public void error(String message, Throwable error) {
         log += "ERROR - " + message + "\n";
         if (listener != null) listener.onLogLine("ERROR - " + message);
-        // System.out.println("ERROR - " + message + " - " + error.getMessage());
-        // error.printStackTrace();
+        System.out.println("ERROR - " + message + " - " + error.getMessage());
+        error.printStackTrace();
     }
 
     public void debug(String message) {
